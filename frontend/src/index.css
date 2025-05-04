@@ -1,3 +1,6 @@
-@tailwind base;
-     @tailwind components;
-     @tailwind utilities;
+/* Reset default styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
