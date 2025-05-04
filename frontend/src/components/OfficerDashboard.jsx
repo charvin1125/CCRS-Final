@@ -33,7 +33,7 @@
 //       }
 //       try {
 //         console.log('Fetching assigned complaints for officer:', officer.email);
-//         const response = await axios.get('http://localhost:5000/api/complaints/assigned', {
+//         const response = await axios.get('https://ccrs-final.onrender.com/api/complaints/assigned', {
 //           withCredentials: true,
 //         });
 //         console.log('Assigned complaints response:', response.data);
@@ -59,7 +59,7 @@
 
 //   const handleLogout = async () => {
 //     try {
-//       await axios.post('http://localhost:5000/api/auth/logout', {}, { withCredentials: true });
+//       await axios.post('https://ccrs-final.onrender.com/api/auth/logout', {}, { withCredentials: true });
 //       setOfficer(null);
 //       navigate('/officer/login');
 //     } catch (error) {
@@ -196,7 +196,7 @@ const OfficerDashboard = ({ officer, setOfficer }) => {
       }
       try {
         console.log('Fetching assigned complaints for officer:', officer.email);
-        const response = await axios.get('http://localhost:5000/api/complaints/assigned', {
+        const response = await axios.get('https://ccrs-final.onrender.com/api/complaints/assigned', {
           withCredentials: true,
         });
         console.log('Assigned complaints response:', response.data);
@@ -222,7 +222,7 @@ const OfficerDashboard = ({ officer, setOfficer }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:5000/api/auth/logout', {}, { withCredentials: true });
+      await axios.post('https://ccrs-final.onrender.com/api/auth/logout', {}, { withCredentials: true });
       setOfficer(null);
       navigate('/officer/login');
     } catch (error) {

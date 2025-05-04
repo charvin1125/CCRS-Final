@@ -28,7 +28,7 @@
 //     }
 //     try {
 //       console.log('Sending officer login request:', credentials);
-//       const response = await axios.post('http://localhost:5000/api/auth/officer/login', credentials, {
+//       const response = await axios.post('https://ccrs-final.onrender.com/api/auth/officer/login', credentials, {
 //         withCredentials: true,
 //       });
 //       console.log('Officer login response:', response.data);
@@ -147,7 +147,7 @@ const OfficerLogin = ({ setOfficer }) => {
     }
     try {
       console.log('Sending officer login request:', credentials);
-      const response = await axios.post('http://localhost:5000/api/auth/officer/login', credentials, {
+      const response = await axios.post('https://ccrs-final.onrender.com/api/auth/officer/login', credentials, {
         withCredentials: true,
       });
       console.log('Officer login response:', response.data);

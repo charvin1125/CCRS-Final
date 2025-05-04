@@ -13,7 +13,7 @@ const AdminUsers = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/users', {
+        const response = await axios.get('https://ccrs-final.onrender.com/api/admin/users', {
           withCredentials: true,
         });
         setUsers(response.data);
@@ -29,7 +29,7 @@ const AdminUsers = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/users/${id}`, {
+      await axios.delete(`https://ccrs-final.onrender.com/api/admin/users/${id}`, {
         withCredentials: true,
       });
       setUsers(users.filter((user) => user._id !== id));

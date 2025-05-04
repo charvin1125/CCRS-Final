@@ -38,7 +38,7 @@
 //     const fetchComplaints = async () => {
 //       try {
 //         console.log('Fetching complaints for user:', user.email);
-//         const response = await axios.get('http://localhost:5000/api/complaints/my-complaints', {
+//         const response = await axios.get('https://ccrs-final.onrender.com/api/complaints/my-complaints', {
 //           withCredentials: true,
 //         });
 //         console.log('Complaints response:', response.data);
@@ -291,7 +291,7 @@ const MyComplaints = ({ user, onLogout }) => {
     const fetchComplaints = async () => {
       try {
         console.log('Fetching complaints for user:', user.email);
-        const response = await axios.get('http://localhost:5000/api/complaints/my-complaints', {
+        const response = await axios.get('https://ccrs-final.onrender.com/api/complaints/my-complaints', {
           withCredentials: true,
         });
         console.log('Complaints response:', response.data);

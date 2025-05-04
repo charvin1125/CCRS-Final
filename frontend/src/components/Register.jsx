@@ -24,7 +24,7 @@ const Register = ({ onRegisterSuccess }) => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/register', registerData, {
+      await axios.post('https://ccrs-final.onrender.com/api/auth/register', registerData, {
         withCredentials: true,
       });
       setShowOtpForm(true);
@@ -37,7 +37,7 @@ const Register = ({ onRegisterSuccess }) => {
   const handleOtpVerify = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/verify-otp', { otp }, {
+      await axios.post('https://ccrs-final.onrender.com/api/auth/verify-otp', { otp }, {
         withCredentials: true,
       });
       setShowOtpForm(false);

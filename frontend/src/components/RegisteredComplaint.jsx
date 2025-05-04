@@ -24,7 +24,7 @@
 //     e.preventDefault();
 //     try {
 //       console.log('Submitting complaint:', complaint);
-//       const response = await axios.post('http://localhost:5000/api/complaints', complaint, {
+//       const response = await axios.post('https://ccrs-final.onrender.com/api/complaints', complaint, {
 //         withCredentials: true,
 //       });
 //       console.log('Complaint response:', response.data);
@@ -169,7 +169,7 @@
 //     }
 //     try {
 //       console.log('Submitting complaint:', complaint);
-//       const response = await axios.post('http://localhost:5000/api/complaints', complaint, {
+//       const response = await axios.post('https://ccrs-final.onrender.com/api/complaints', complaint, {
 //         withCredentials: true,
 //       });
 //       console.log('Complaint response:', response.data);
@@ -347,7 +347,7 @@ const RegisteredComplaint = ({ user, onLogout }) => {
     }
     try {
       console.log('Submitting complaint:', complaint);
-      const response = await axios.post('http://localhost:5000/api/complaints', complaint, {
+      const response = await axios.post('https://ccrs-final.onrender.com/api/complaints', complaint, {
         withCredentials: true,
       });
       console.log('Complaint response:', response.data);

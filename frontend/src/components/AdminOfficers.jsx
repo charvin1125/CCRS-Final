@@ -13,7 +13,7 @@ const AdminOfficers = () => {
   useEffect(() => {
     const fetchOfficers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/officers', {
+        const response = await axios.get('https://ccrs-final.onrender.com/api/admin/officers', {
           withCredentials: true,
         });
         setOfficers(response.data);
@@ -29,7 +29,7 @@ const AdminOfficers = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/officers/${id}`, {
+      await axios.delete(`https://ccrs-final.onrender.com/api/admin/officers/${id}`, {
         withCredentials: true,
       });
       setOfficers(officers.filter((officer) => officer._id !== id));

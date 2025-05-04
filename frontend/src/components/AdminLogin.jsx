@@ -29,7 +29,7 @@ const AdminLogin = ({ setAdmin }) => {
     }
     try {
       console.log('Sending admin login request:', credentials);
-      const response = await axios.post('http://localhost:5000/api/auth/admin/login', credentials, {
+      const response = await axios.post('https://ccrs-final.onrender.com/api/auth/admin/login', credentials, {
         withCredentials: true,
       });
       console.log('Admin login response:', response.data);

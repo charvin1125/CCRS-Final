@@ -29,7 +29,7 @@
 //   const [errors, setErrors] = useState({});
 //   const [loading, setLoading] = useState(false);
 //   const [submission, setSubmission] = useState(null);
-//   const qrCodeUrl = 'http://localhost:5000/public/qr-code.png';
+//   const qrCodeUrl = 'https://ccrs-final.onrender.com/public/qr-code.png';
 
 //   const categories = ['Water Supply', 'Electricity', 'Roads', 'Sanitation', 'Public Transport'];
 
@@ -78,7 +78,7 @@
 //     if (formData.photo) data.append('photo', formData.photo);
 
 //     try {
-//       const response = await axios.post('http://localhost:5000/api/complaints/public', data, {
+//       const response = await axios.post('https://ccrs-final.onrender.com/api/complaints/public', data, {
 //         headers: { 'Content-Type': 'multipart/form-data' },
 //       });
 //       setSubmission(response.data);
@@ -315,8 +315,8 @@ const ComplaintForm = () => {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [submission, setSubmission] = useState(null);
-  const qrCodeUrl = 'http://localhost:5000/public/qr-code.png';
-  const gupshupQrCodeUrl = 'http://localhost:5000/public/gupshup-whatsapp-qr.png';
+  const qrCodeUrl = 'https://ccrs-final.onrender.com/public/qr-code.png';
+  const gupshupQrCodeUrl = 'https://ccrs-final.onrender.com/public/gupshup-whatsapp-qr.png';
   const gupshupChatLink = `https://wa.me/${process.env.REACT_APP_GUPSHUP_PHONE_NUMBER}?text=File%20Complaint`;
 
   const categories = ['Water Supply', 'Electricity', 'Roads', 'Sanitation', 'Public Transport'];
@@ -366,7 +366,7 @@ const ComplaintForm = () => {
     if (formData.photo) data.append('photo', formData.photo);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/complaints/public', data, {
+      const response = await axios.post('https://ccrs-final.onrender.com/api/complaints/public', data, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setSubmission(response.data);

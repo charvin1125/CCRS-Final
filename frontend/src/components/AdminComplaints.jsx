@@ -14,7 +14,7 @@
 //   useEffect(() => {
 //     const fetchComplaints = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:5000/api/admin/complaints', {
+//         const response = await axios.get('https://ccrs-final.onrender.com/api/admin/complaints', {
 //           withCredentials: true,
 //         });
 //         setComplaints(response.data);
@@ -120,7 +120,7 @@ const AdminComplaints = () => {
   useEffect(() => {
     const fetchComplaints = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/complaints', {
+        const response = await axios.get('https://ccrs-final.onrender.com/api/admin/complaints', {
           withCredentials: true,
         });
         console.log('Raw Complaints API response:', response.data);

@@ -5,7 +5,7 @@ import './index.css';
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://ccrs-final.onrender.com';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

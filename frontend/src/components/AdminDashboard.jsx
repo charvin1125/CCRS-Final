@@ -29,7 +29,7 @@
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:5000/api/admin/dashboard', {
+//         const response = await axios.get('https://ccrs-final.onrender.com/api/admin/dashboard', {
 //           withCredentials: true,
 //         });
 //         setData(response.data);
@@ -286,7 +286,7 @@
 //   useEffect(() => {
 //     const checkSession = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:5000/api/auth/admin', {
+//         const response = await axios.get('https://ccrs-final.onrender.com/api/auth/admin', {
 //           withCredentials: true,
 //         });
 //         console.log('Session check response:', response.data);
@@ -300,7 +300,7 @@
 //     const fetchData = async () => {
 //       try {
 //         setLoading(true);
-//         const response = await axios.get('http://localhost:5000/api/admin/dashboard', {
+//         const response = await axios.get('https://ccrs-final.onrender.com/api/admin/dashboard', {
 //           withCredentials: true,
 //         });
 //         console.log('Raw Dashboard API response:', response.data);
@@ -684,7 +684,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const checkSession = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/auth/admin', {
+        const response = await axios.get('https://ccrs-final.onrender.com/api/auth/admin', {
           withCredentials: true,
         });
         console.log('Session check response:', response.data);
@@ -698,7 +698,7 @@ const AdminDashboard = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:5000/api/admin/dashboard', {
+        const response = await axios.get('https://ccrs-final.onrender.com/api/admin/dashboard', {
           withCredentials: true,
         });
         console.log('Raw Dashboard API response:', response.data);

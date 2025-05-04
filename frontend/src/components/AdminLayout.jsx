@@ -37,7 +37,7 @@
 
 //   const handleLogout = async () => {
 //     try {
-//       await axios.post('http://localhost:5000/api/auth/logout', {}, { withCredentials: true });
+//       await axios.post('https://ccrs-final.onrender.com/api/auth/logout', {}, { withCredentials: true });
 //       setAdmin(null);
 //       navigate('/admin/login');
 //     } catch (error) {
@@ -221,7 +221,7 @@ const AdminLayout = ({ admin, setAdmin }) => {
   const handleLogout = async () => {
     try {
       console.log('Attempting logout...');
-      await axios.post('http://localhost:5000/api/auth/logout', {}, { withCredentials: true });
+      await axios.post('https://ccrs-final.onrender.com/api/auth/logout', {}, { withCredentials: true });
       console.log('Logout successful, clearing admin state');
       setAdmin(null); // Trigger App.jsx's handleLogout via state change
       navigate('/admin/login', { replace: true });

@@ -33,13 +33,13 @@
 //         // Attempt to fetch from tracking endpoint
 //         let response;
 //         try {
-//           response = await axios.get(`http://localhost:5000/api/complaints/${id}/track`, {
+//           response = await axios.get(`https://ccrs-final.onrender.com/api/complaints/${id}/track`, {
 //             withCredentials: true,
 //           });
 //         } catch (trackError) {
 //           console.warn('Tracking endpoint failed, falling back to complaint details:', trackError);
 //           // Fallback to complaint details endpoint
-//           response = await axios.get(`http://localhost:5000/api/complaints/${id}`, {
+//           response = await axios.get(`https://ccrs-final.onrender.com/api/complaints/${id}`, {
 //             withCredentials: true,
 //           });
 //           // Simulate history if not provided
@@ -281,7 +281,7 @@ const TrackComplaint = () => {
   useEffect(() => {
     const fetchComplaint = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/complaints/track/${id}`);
+        const response = await axios.get(`https://ccrs-final.onrender.com/api/complaints/track/${id}`);
         setComplaint(response.data);
         setError('');
       } catch (error) {
@@ -341,7 +341,7 @@ const TrackComplaint = () => {
                     <strong>Photo:</strong>
                   </Typography>
                   <img
-                    src={`http://localhost:5000${complaint.photo}`}
+                    src={`https://ccrs-final.onrender.com${complaint.photo}`}
                     alt="Complaint"
                     style={{ maxWidth: '100%', borderRadius: '8px' }}
                   />

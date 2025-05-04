@@ -24,7 +24,7 @@
 //     const fetchComplaint = async () => {
 //       try {
 //         console.log('Fetching complaint:', id);
-//         const response = await axios.get(`http://localhost:5000/api/complaints/${id}`, {
+//         const response = await axios.get(`https://ccrs-final.onrender.com/api/complaints/${id}`, {
 //           withCredentials: true,
 //         });
 //         console.log('Complaint response:', response.data);
@@ -52,7 +52,7 @@
 //   const handleReopenComplaint = async () => {
 //     try {
 //       const response = await axios.put(
-//         `http://localhost:5000/api/complaints/${id}/reopen`,
+//         `https://ccrs-final.onrender.com/api/complaints/${id}/reopen`,
 //         {},
 //         { withCredentials: true }
 //       );
@@ -206,7 +206,7 @@
 //     const fetchComplaint = async () => {
 //       try {
 //         console.log('Fetching complaint:', id);
-//         const response = await axios.get(`http://localhost:5000/api/complaints/${id}`, {
+//         const response = await axios.get(`https://ccrs-final.onrender.com/api/complaints/${id}`, {
 //           withCredentials: true,
 //         });
 //         console.log('Complaint response:', response.data);
@@ -234,7 +234,7 @@
 //   const handleReopenComplaint = async () => {
 //     try {
 //       const response = await axios.put(
-//         `http://localhost:5000/api/complaints/${id}/reopen`,
+//         `https://ccrs-final.onrender.com/api/complaints/${id}/reopen`,
 //         {},
 //         { withCredentials: true }
 //       );
@@ -259,7 +259,7 @@
 //     }
 //     try {
 //       const response = await axios.put(
-//         `http://localhost:5000/api/complaints/${id}/status`,
+//         `https://ccrs-final.onrender.com/api/complaints/${id}/status`,
 //         statusUpdate,
 //         { withCredentials: true }
 //       );
@@ -464,7 +464,7 @@ const ComplaintDetails = ({ user, officer, onLogout }) => {
     const fetchComplaint = async () => {
       try {
         console.log('Fetching complaint:', id);
-        const response = await axios.get(`http://localhost:5000/api/complaints/${id}`, {
+        const response = await axios.get(`https://ccrs-final.onrender.com/api/complaints/${id}`, {
           withCredentials: true,
         });
         console.log('Complaint response:', response.data);
@@ -492,7 +492,7 @@ const ComplaintDetails = ({ user, officer, onLogout }) => {
   const handleReopenComplaint = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/complaints/${id}/reopen`,
+        `https://ccrs-final.onrender.com/api/complaints/${id}/reopen`,
         {},
         { withCredentials: true }
       );
@@ -517,7 +517,7 @@ const ComplaintDetails = ({ user, officer, onLogout }) => {
     }
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/complaints/${id}/status`,
+        `https://ccrs-final.onrender.com/api/complaints/${id}/status`,
         statusUpdate,
         { withCredentials: true }
       );
